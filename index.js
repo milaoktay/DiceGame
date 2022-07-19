@@ -34,6 +34,8 @@ function reset() {
       kontostand = 100;
       document.querySelector('#kontostand').innerHTML = `${kontostand}€`;
       document.querySelector('#dice').src =``;
+      document.querySelector('.roll2').src =``;
+      document.querySelector('.roll3').src =``;
 }
 
 let wurf2 = document.createElement('img');
