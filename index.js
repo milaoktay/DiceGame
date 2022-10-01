@@ -6,6 +6,7 @@ let zahl2;
 let zahl3;
 let called = false;
 
+//Wetten button funktion
 function run() {
       zahl = Math.floor(Math.random()*6 + 1);
       zahl2 = Math.floor(Math.random()*6 + 1);
@@ -18,7 +19,7 @@ function run() {
       };
       
       document.querySelector('#dice').src =`${zahl}.png`;
-      
+      //Spiel mit drei Würfeln
       if (called == true) {
             document.querySelector('.roll2').src =`${zahl2}.png`;
             document.querySelector('.roll3').src =`${zahl3}.png`;
@@ -30,6 +31,7 @@ function run() {
       document.querySelector('#kontostand').innerHTML = `${kontostand}€`;
 }
 
+//Reset button funktion
 function reset() {
       kontostand = 100;
       document.querySelector('#kontostand').innerHTML = `${kontostand}€`;
@@ -38,6 +40,7 @@ function reset() {
       document.querySelector('.roll3').src =``;
 }
 
+//Drei Würfel Spiel - 2 Neue Würfel Elemente erstellen
 let wurf2 = document.createElement('img');
 let wurf3 = document.createElement('img');
 
