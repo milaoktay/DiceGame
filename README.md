@@ -1,4 +1,4 @@
-#DICE GAME
+# DICE GAME
 
 A dice game, using vanilla JavaScript, HTML and CSS.
 
